@@ -1,1 +1,40 @@
-<h1>Hello World</h1>
+<p>Hello</p>
+<p class="su2c-font">This is my font, served from the SU2C UAT CDN</p>
+<p class="font">This is my font, served from my own CDN</p>
+<p class="bbc-font">This is the BBC font to prove we are not going crazy</p>
+<style>@font-face {
+  font-family: "itc_avant_garde_pro_mdbold";
+  src: url("https://d38mghdx32zhv6.cloudfront.net/itc_-_itcavantgardepro-bold-webfont.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "su2c_itc_avant_garde_pro_mdbold";
+  src: url("https://d38mghdx32zhv6.cloudfront.net/sites/all/themes/custom/su2c/fonts/itc_-_itcavantgardepro-bold-webfont.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "bbc";
+  src: url("https://static.files.bbci.co.uk/fonts/reith/2.512/BBCReithSans_W_Bd.woff2")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.su2c-font {
+  font-family: su2c_itc_avant_garde_pro_mdbold, Comic Sans, sans-serif;
+}
+
+.font {
+  font-family: itc_avant_garde_pro_mdbold, Comic Sans, sans-serif;
+}
+
+.bbc-font {
+  font-family: bbc, Comic Sans, sans-serif;
+}
+</style>
